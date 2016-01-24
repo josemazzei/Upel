@@ -1,0 +1,26 @@
+<script type="text/javascript" src="js/jquery-2.0.2.min.js"></script>
+<script type="text/javascript" src="js/lemez_validacion1.1.js"></script>
+<script type="text/javascript">
+<!--ejemplo: $("#id del campo a validar").lemez_aceptar("tipo de validacion","si es un campo obligatorio indicar el id del boton, para varios botones separarlos por coma como se indica en el ejemplo 3"); 
+<!--IMPORTANTE Para mejor compatibilidad Darle Color a los Bordes de los campos.
+$(function(){
+$("#campo1").lemez_aceptar("correo"); 
+$("#campo2").lemez_aceptar("texto","boton1"); 
+$("#campo3").lemez_aceptar("numero","boton3,boton2"); 
+});
+</script>
+Plugin de Jquery desarrollado por Leonardo Melendez. 1.1 Beta.<br />
+  <form style="margin:100px;" action="destino.html" method="post" id="formulario" >
+    Campo1 (correo):<br/>
+    <input type="text"  id="campo1" /><br/><br/>
+    Campo2(texto):<br/>
+    <input type="text" id="campo2" /><br/><br/>
+    Campo3(numero):<br/>
+    <input type="text"   id="campo3" /><br/><br/>
+    <br/>  
+     <button id="boton1" >button1</button>
+	<button id="boton2" >button2</button>
+	<button id="boton3" >button3</button>
+  </form>
+
+<style> input{border: 2px solid #bbb}</style>
